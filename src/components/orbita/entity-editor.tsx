@@ -51,7 +51,7 @@ export function EntityEditor({editor,workspace,onClose,onSaved}:{editor:Editor;w
   setBusy(true);await simulateRequest();const id=crypto.randomUUID();
   if(editor.kind==='project'){
    const prior=editor.item;const p:Project={id:prior?.id??id,name:form.name.trim(),description:form.description.trim(),category:form.category,priority:form.priority as Priority,status:form.status as ProjectStatus,dueDate:form.dueDate,memberIds:members,image:form.image,color:prior?.color??['peach','lilac','mint','blue','pink','sand'][workspace.projects.length%6]};
-   commitWorkspace(w=>({...w,projects:editing?w.projects.map(x=>x.id===p.id?p:x):[...w.projects,p]}),`${editing?'Se actualizó':'Se creó'} el proyecto ${p.name}.`);
+   commitWorkspace(w=>({...w,projects:editing?w.projects.map(x=>x.id===p.id?p:x):[...w.projects,p],members:w.members.map(m=>m.projectId===p.id&&!p.memberIds.includes(m.userId)?{...m,projectId:''}:m)}),`${editing?'Se actualizó':'Se creó'} el proyecto ${p.name}.`);
   }else if(editor.kind==='member'){
    const prior=editor.item;const m:Member={userId:prior?.userId??id,name:form.name.trim(),email:form.email.trim(),role:form.role.trim(),position:form.position.trim(),birthdate:form.birthdate,phone:form.phone.trim(),projectId:form.projectId==='none'?'':form.projectId,isActive:active};
    commitWorkspace(w=>({...w,members:editing?w.members.map(x=>x.userId===m.userId?m:x):[...w.members,m],projects:w.projects.map(p=>({...p,memberIds:p.id===m.projectId?Array.from(new Set([...p.memberIds,m.userId])):p.id===prior?.projectId?p.memberIds.filter(x=>x!==m.userId):p.memberIds}))}),`${editing?'Se actualizó':'Se incorporó'} a ${m.name}.`);
