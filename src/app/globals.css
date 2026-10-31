@@ -150,3 +150,13 @@
 .theme-dark{--orbit-bg:#111329;--orbit-card:#1c1e38;--orbit-line:#30304c;--orbit-soft:#2b294a}.theme-dark .sidebar{background:linear-gradient(180deg,#1b1d35,#16182d);border-color:#30304c}.theme-dark .metric-card{background:linear-gradient(145deg,#242442,#1c1e38)}.theme-dark .welcome-banner{background:radial-gradient(circle at 75% 25%,#704bd8,transparent 38%),linear-gradient(120deg,#171a4c,#552975)}
 @keyframes orbita-glow{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.orbita-app *,.orbita-app *:before,.orbita-app *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Identidad Órbita: azul acero, grafito y energía ámbar. */
+.orbita-app{--orbit-blue:#1761d9;--orbit-bg:#eef2f7;--orbit-line:#dce4ee;--orbit-soft:#e7eef8}
+.sidebar{background:linear-gradient(180deg,#fff,#f3f7fb);border-color:#dce5ef}
+.brand{color:#102b4e}.nav-item:hover{background:#e8f1fc;color:#175ac4}.nav-item.active{background:linear-gradient(100deg,#dcecff,#f2f7fd);color:#1359bf;box-shadow:inset 3px 0 #2374e8}
+.welcome-banner{background:radial-gradient(circle at 74% 30%,#2166ae 0,transparent 34%),radial-gradient(circle at 100% 90%,#087b82 0,transparent 36%),linear-gradient(115deg,#0a172b 0%,#102d4d 57%,#123f58 100%);box-shadow:0 20px 45px #102c4d35}
+.banner-copy h2 span{color:#ffc46b}.banner-copy button{background:#ffc46b;color:#15283b}.banner-copy button:hover{box-shadow:0 9px 24px #ffb74855}.planet-main{box-shadow:0 0 60px #46c8e545}
+.metric-card:nth-child(1){background:linear-gradient(145deg,#fff,#eaf2ff)}.metric-card:nth-child(2){background:linear-gradient(145deg,#fff,#e8f7f5)}.metric-card:nth-child(3){background:linear-gradient(145deg,#fff,#eef3f8)}.metric-card:nth-child(4){background:linear-gradient(145deg,#fff,#fff4e3)}
+.metric-card:hover,.project-card:hover,.team-card:hover{border-color:#b9cfe6;box-shadow:0 18px 38px #173d681c}.project-cover:after{background:linear-gradient(180deg,#091b311f,transparent 45%,#091b3130)}.project-title:hover,.text-button:hover{color:#1761d9}.progress-track span{background:linear-gradient(90deg,#1670dc,#19a3aa)}.carousel-controls button:hover{background:#1761d9;box-shadow:0 7px 18px #1761d940}
+.theme-dark{--orbit-bg:#0b1522;--orbit-card:#17283b;--orbit-line:#2b4057;--orbit-soft:#20364d}.theme-dark .sidebar{background:linear-gradient(180deg,#142337,#0e1a2a);border-color:#2b4057}.theme-dark .brand{color:#e0ecfa}.theme-dark .nav-item.active{background:#203d5c;color:#a9d5ff}.theme-dark .metric-card{background:linear-gradient(145deg,#203850,#17283b)}.theme-dark .welcome-banner{background:radial-gradient(circle at 75% 25%,#206caf,transparent 38%),linear-gradient(120deg,#0a172b,#104a58)}
