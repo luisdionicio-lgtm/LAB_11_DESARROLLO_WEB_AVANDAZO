@@ -1,5 +1,7 @@
 # Órbita · Laboratorio 11
 
+[Ver aplicación en Vercel](https://lab-11-desarrollo-web-avandazo.vercel.app/dashboard) · [Repositorio](https://github.com/luisdionicio-lgtm/LAB_11_DESARROLLO_WEB_AVANDAZO)
+
 Un espacio para organizar proyectos, personas y tareas. Esta entrega parte de los ejercicios de componentes y estilización del laboratorio y desarrolla la tarea con una identidad visual propia: azul profundo, acentos lima, fotografías de referencia e iconos Lucide.
 
 ## Ejecutarlo
