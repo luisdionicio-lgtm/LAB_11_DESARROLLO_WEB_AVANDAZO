@@ -4,7 +4,15 @@
 
 Un espacio para organizar proyectos, personas y tareas. Esta entrega parte de los ejercicios de componentes y estilización del laboratorio y desarrolla la tarea con una identidad visual propia: azul profundo, acentos lima, fotografías de referencia e iconos Lucide.
 
-## Ejecutarlo
+## Contenido del laboratorio
+
+- **Ejercicio 1:** `ejercicios/01-componentes-estilos` contiene el proyecto independiente de componentes y estilos. Para ejecutarlo, entra en esa carpeta y usa `npm ci` y `npm run dev`.
+- **Ejercicio 2 y tarea:** la raíz contiene el proyecto Next.js con shadcn/ui y el dashboard Órbita. La configuración está en `components.json` y los componentes generados están en `src/components/ui`.
+- **Evidencias e informe:** `docs/capturas/ejercicios` contiene las capturas de los ejercicios y `docs/informe/GLAB-S11-EAREVALO-2026-1-ORDENADO.docx` el informe ordenado entregado previamente. El informe todavía no incorpora las capturas finales de la tarea.
+
+Cada proyecto tiene sus propias dependencias y archivo `package-lock.json`. Si ejecutas ambos al mismo tiempo, inicia el segundo en otro puerto, por ejemplo `npm run dev -- -p 3001`.
+
+## Ejecutar Órbita
 
 ```bash
 npm ci
